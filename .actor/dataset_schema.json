@@ -1,0 +1,52 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "properties": {
+      "domain": { "type": "string", "title": "Root Domain" },
+      "start_url": { "type": "string", "title": "Start URL" },
+      "http_status": { "type": "integer", "title": "HTTP Status" },
+      "title": { "type": "string", "title": "Page Title" },
+      "emails": { "type": "array", "title": "Verified Public Emails", "items": { "type": "string" } },
+      "social_links": { "type": "object", "title": "Social & Engineering Profiles" },
+      "tech_stack": { "type": "array", "title": "Detected Tech Stack", "items": { "type": "string" } },
+      "email_provider": { "type": "string", "title": "MX Email Provider" },
+      "has_spf": { "type": "boolean", "title": "Has SPF" },
+      "has_dmarc": { "type": "boolean", "title": "Has DMARC" },
+      "pages_scanned": { "type": "integer", "title": "Pages Scanned" },
+      "audited_at_utc": { "type": "string", "title": "Audited At (UTC)" }
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "B2B Enrichment Overview",
+      "transformation": {
+        "fields": [
+          "domain",
+          "http_status",
+          "title",
+          "emails",
+          "email_provider",
+          "has_spf",
+          "has_dmarc",
+          "tech_stack",
+          "pages_scanned"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "domain": { "label": "Domain", "format": "text" },
+          "http_status": { "label": "HTTP", "format": "number" },
+          "title": { "label": "Title", "format": "text" },
+          "emails": { "label": "Public Emails", "format": "array" },
+          "email_provider": { "label": "MX Provider", "format": "text" },
+          "has_spf": { "label": "SPF", "format": "boolean" },
+          "has_dmarc": { "label": "DMARC", "format": "boolean" },
+          "tech_stack": { "label": "Tech Stack", "format": "array" },
+          "pages_scanned": { "label": "Pages", "format": "number" }
+        }
+      }
+    }
+  }
+}

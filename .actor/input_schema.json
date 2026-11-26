@@ -1,0 +1,48 @@
+{
+  "title": "B2B Company Contact, Tech Stack & DNS Auth Auditor Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "domains": {
+      "title": "Company URLs or Domains",
+      "type": "array",
+      "description": "List of public company websites or root domains to enrich (e.g. https://khoaphan.dev).",
+      "editor": "stringList",
+      "default": [
+        "https://khoaphan.dev"
+      ],
+      "prefill": [
+        "https://khoaphan.dev"
+      ]
+    },
+    "crawlContactPages": {
+      "title": "Check /contact, /about & /.well-known/security.txt",
+      "type": "boolean",
+      "description": "Also inspect standard first-party contact and about routes on the same origin.",
+      "default": true
+    },
+    "checkDnsEmailAuth": {
+      "title": "Audit MX, SPF & DMARC via DNS-over-HTTPS",
+      "type": "boolean",
+      "description": "Resolve public MX provider (Google Workspace, Microsoft 365, Zoho, Proton, etc.) plus SPF and DMARC policies.",
+      "default": true
+    },
+    "respectRobotsTxt": {
+      "title": "Respect robots.txt",
+      "type": "boolean",
+      "description": "Check /robots.txt before fetching pages and skip disallowed paths.",
+      "default": true
+    },
+    "requestTimeoutSecs": {
+      "title": "HTTP Timeout (seconds)",
+      "type": "integer",
+      "description": "Per-request HTTP timeout in seconds.",
+      "default": 12,
+      "minimum": 3,
+      "maximum": 45
+    }
+  },
+  "required": [
+    "domains"
+  ]
+}

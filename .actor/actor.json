@@ -1,0 +1,16 @@
+{
+  "actorSpecification": 1,
+  "name": "b2b-contact-auditor",
+  "title": "B2B Contact, Tech Stack & DNS Auth Auditor (n8n & MCP)",
+  "description": "Robots.txt-compliant B2B lead enrichment Actor for automation agencies (n8n, Make, Zapier, Clay & MCP). Extracts verified public business emails, social profiles, web tech fingerprints, and MX/SPF/DMARC email infrastructure.",
+  "version": "1.0",
+  "buildTag": "latest",
+  "meta": {
+    "templateId": "python-start"
+  },
+  "input": "./input_schema.json",
+  "dockerfile": "./Dockerfile",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
+}
