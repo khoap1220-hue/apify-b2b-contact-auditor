@@ -1,0 +1,14 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "B2B Contact, Tech Stack & DNS Auth Output",
+  "description": "Enriched company records containing public emails, social profiles, tech stack, and MX/SPF/DMARC email infrastructure.",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "string",
+      "title": "Enriched B2B Company Records",
+      "description": "Dataset containing all enriched company records",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
+    }
+  }
+}
