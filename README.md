@@ -15,7 +15,7 @@ Deterministic, `robots.txt`-compliant B2B company enrichment Actor designed for 
   "start_url": "https://khoaphan.dev",
   "http_status": 200,
   "title": "Khoa Phan — Systems & AI Architect",
-  "emails": ["khoa@khoaphan.dev", "khoap1220@gmail.com"],
+  "emails": ["khoa@khoaphan.dev", "contact@example.com"],
   "social_links": {
     "github": ["https://github.com/khoap1220-hue"],
     "linkedin": ["https://www.linkedin.com/in/khoa-phan-55bab8448"],
@@ -31,4 +31,4 @@ Deterministic, `robots.txt`-compliant B2B company enrichment Actor designed for 
 ```
 
 ## Custom White-Label Actors, Playwright Pipelines & MCP Servers
-Built by **Khoa Phan** ([khoaphan.dev](https://khoaphan.dev) · `khoa@khoaphan.dev` · 20+ merged upstream OSS PRs · 4 official Anthropic MCP Registry servers). Available for white-label agency subcontracting and custom Apify/Playwright/MCP integrations.
+Built by **Khoa Phan** ([khoaphan.dev](https://khoaphan.dev) · `khoa@khoaphan.dev` · 21+ merged upstream OSS PRs · 5 official Anthropic MCP Registry servers). Available for white-label agency subcontracting and custom Apify/Playwright/MCP integrations.
